@@ -51,3 +51,91 @@ table {
 
 
 /* Write your css below here */
+.container {
+	background-color: rgb(199 11 73);
+	min-height: 100vh;
+	width: 100%;
+	flex-direction: column;
+	display: grid;
+
+	/* padding: 50px 50px; */
+
+	/* margin: 50px 50px; */
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-color: peachpuff;
+}
+
+.logo {
+	display: none;
+}
+
+main {
+	flex: 1;
+	flex-direction: row;
+	display: flex;
+	padding: 20px;
+
+}
+
+section {
+	background-color: #fff;
+	flex: 1;
+	padding: 12px 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+
+}
+
+.content{
+	border: 3px solid black;
+	padding: 10px;
+}
+
+aside {
+	background-color: palevioletred;
+	flex: 1;
+	padding: 12px 10px;
+	display: grid;
+}
+
+h1 {
+	padding: 10px;
+}
+
+a {
+	margin-right: .7rem;
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+a:hover {
+	/* display: flex; */
+	color: black;
+	text-decoration: underline;
+}
+
+footer {
+	background-color: peachpuff;
+	justify-content: center;
+	text-align: center;
+}
+
+@media screen and (width >= 600px) {
+	.container {
+	background-color: gold
+
+	}
+
+	.main {
+		flex-direction: column;
+	}
+	
+}
