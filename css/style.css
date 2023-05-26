@@ -89,7 +89,7 @@ section {
 	flex: 1;
 	padding: 12px 10px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 10px;
 
 }
@@ -128,7 +128,7 @@ footer {
 	text-align: center;
 }
 
-@media screen and (width >= 600px) {
+@media screen and (width >= 500px) {
 	.container {
 	background-color: gold
 
@@ -136,6 +136,16 @@ footer {
 
 	.main {
 		flex-direction: column;
+	}
+	section{
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
+@media screen and (width >=700px) {
+	section {
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	
 }
